@@ -9,6 +9,7 @@ export default function CreateTodo() {
   const trpc = api.useContext();
 
   const { mutate } = api.todo.create.useMutation({
+    // invalidate queries, re-fetch data
     onSettled: async () => {
       await trpc.todo.all.invalidate();
     },
