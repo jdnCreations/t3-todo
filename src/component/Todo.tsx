@@ -23,7 +23,7 @@ export default function Todo({ todo }: TodoProps) {
           </label>
         </div>
         <button
-          className="rounded bg-blue-700 p-1 hover:bg-blue-800"
+          className="rounded bg-red-700 p-1 hover:bg-red-800"
           onClick={() => {}}
         >
           Delete
